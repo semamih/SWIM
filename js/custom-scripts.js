@@ -8,6 +8,14 @@
 jQuery(function ($) {
 
     "use strict";
+
+    document.querySelector('.btn-header-cta').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector('.section-content-block').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
     
     // 00. RTL status check.
     var rtl_status = false;
